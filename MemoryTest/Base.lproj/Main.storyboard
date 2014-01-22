@@ -12,7 +12,7 @@
                         <viewControllerLayoutGuide type="top" id="fQc-Va-CbO"/>
                         <viewControllerLayoutGuide type="bottom" id="wtK-lo-xeb"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" tag="100" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -65,7 +65,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAz-Ko-N8U">
-                                <rect key="frame" x="139" y="127" width="42" height="21"/>
+                                <rect key="frame" x="89" y="124" width="138" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -77,12 +77,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7X7-zG-1Be">
+                                <rect key="frame" x="104" y="369" width="113" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGame:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gNg-Ir-CbE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="buttonFour" destination="7dE-iO-n0v" id="yWU-8N-H3O"/>
                         <outlet property="buttonOne" destination="2QQ-h2-SIP" id="abs-8l-2ef"/>
+                        <outlet property="buttonStart" destination="7X7-zG-1Be" id="cmg-FP-NB4"/>
                         <outlet property="buttonThree" destination="Y0a-gY-jGR" id="7EO-Hv-5ca"/>
                         <outlet property="buttonTwo" destination="caM-NC-cSe" id="mzT-24-829"/>
                         <outlet property="levelLabel" destination="sAz-Ko-N8U" id="x1z-Uk-ebh"/>
