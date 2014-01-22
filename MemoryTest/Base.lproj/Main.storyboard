@@ -24,10 +24,11 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="selectButtonOne:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WCM-pv-nGr"/>
+                                    <action selector="selectButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Acf-cm-IbW"/>
+                                    <action selector="touchButton:" destination="vXZ-lx-hvc" eventType="touchDown" id="nVZ-Q8-Oea"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caM-NC-cSe">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caM-NC-cSe">
                                 <rect key="frame" x="85" y="301" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.10827242939999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -35,24 +36,33 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="selectButtonTwo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Q50-xN-vTV"/>
+                                    <action selector="selectButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gxd-kt-KLO"/>
+                                    <action selector="touchButton:" destination="vXZ-lx-hvc" eventType="touchDown" id="Zk7-zx-55r"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0a-gY-jGR">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0a-gY-jGR">
                                 <rect key="frame" x="177" y="301" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.19839969760000001" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="three">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="selectButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wP8-RG-5XB"/>
+                                    <action selector="touchButton:" destination="vXZ-lx-hvc" eventType="touchDown" id="IGc-pH-JHS"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dE-iO-n0v">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dE-iO-n0v">
                                 <rect key="frame" x="224" y="250" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.91577523949999995" green="0.53813105819999996" blue="0.54851835969999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="four">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="selectButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="n1N-Dx-XYL"/>
+                                    <action selector="touchButton:" destination="vXZ-lx-hvc" eventType="touchDown" id="j9P-ms-gei"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAz-Ko-N8U">
                                 <rect key="frame" x="139" y="127" width="42" height="21"/>
