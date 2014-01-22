@@ -150,16 +150,16 @@
                                     <outlet property="delegate" destination="L1A-h8-B4o" id="sat-9o-8aR"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RANKING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EWy-K9-Uf3">
-                                <rect key="frame" x="122" y="43" width="77" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RANKING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EWy-K9-Uf3">
+                                <rect key="frame" x="85" y="42" width="151" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TMl-cp-TtO">
-                                <rect key="frame" x="137" y="430" width="46" height="30"/>
+                                <rect key="frame" x="135" y="430" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="CLOSE">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
