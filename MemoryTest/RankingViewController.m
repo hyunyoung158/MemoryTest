@@ -28,7 +28,6 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UserCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CELL_ID" forIndexPath:indexPath];
     User *one = [self.data objectAtIndex:indexPath.row];
-    NSString *str = [NSString stringWithFormat:@"%@ : %d", one.name, one.score];
     
     cell.name.text = one.name;
     cell.score.text = [NSString stringWithFormat:@"%d", one.score];

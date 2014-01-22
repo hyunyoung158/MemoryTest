@@ -57,7 +57,7 @@
         animationDurationFlag = 1;
     }
     
-    [self animationSelectButton:[NSNumber numberWithInteger:button.tag]];
+//    [self animationSelectButton:[NSNumber numberWithInteger:button.tag]];
     [self userInput:button.tag];
 }
 
@@ -183,6 +183,7 @@
         self.buttonThree.enabled = YES;
         self.buttonFour.enabled = YES;
     } else {
+//        [self.view setUserInteractionEnabled:NO];
         self.buttonOne.enabled = NO;
         self.buttonTwo.enabled = NO;
         self.buttonThree.enabled = NO;
@@ -197,9 +198,10 @@
     animationDurationFlag = 0;
     elapsedTime = 0;
     // 뷰 새로 그리기.
-    self.levelLabel.text = @"";
+    self.levelLabel.text = @"Memory Tests";
     self.buttonStart.hidden = NO;
     [self buttonInputEnableMode:0];
+    self.buttonStart.enabled = YES;
     
 }
 
@@ -223,6 +225,7 @@
     
     [UIView animateWithDuration:duration animations:^{
         button.backgroundColor = [UIColor grayColor];
+//        button setImage:[UIImage imageNamed:<#(NSString *)#>] forState:<#(UIControlState)#>
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:duration animations:^{
                     button.backgroundColor = [UIColor clearColor];
@@ -244,16 +247,16 @@
     // 버튼 이미지 할당
     [self.buttonOne setImage:[UIImage imageNamed:@"star1@2x.png"] forState:UIControlStateNormal];
         [self.buttonOne setImage:[UIImage imageNamed:@"star1@2x.png"] forState:UIControlStateDisabled];
-            [self.buttonOne setImage:[UIImage imageNamed:@"star1_@2x.png"] forState:UIControlStateSelected];
+            [self.buttonOne setImage:[UIImage imageNamed:@"star1_s@2x.png"] forState:UIControlStateHighlighted];
     [self.buttonTwo setImage:[UIImage imageNamed:@"star2@2x.png"] forState:UIControlStateNormal];
         [self.buttonTwo setImage:[UIImage imageNamed:@"star2@2x.png"] forState:UIControlStateDisabled];
-            [self.buttonTwo setImage:[UIImage imageNamed:@"star2_s@2x.png"] forState:UIControlStateSelected];
+            [self.buttonTwo setImage:[UIImage imageNamed:@"star2_s@2x.png"] forState:UIControlStateHighlighted];
     [self.buttonThree setImage:[UIImage imageNamed:@"star3@2x.png"] forState:UIControlStateNormal];
         [self.buttonThree setImage:[UIImage imageNamed:@"star3@2x.png"] forState:UIControlStateDisabled];
-            [self.buttonThree setImage:[UIImage imageNamed:@"star3_s@2x.png"] forState:UIControlStateSelected];
+            [self.buttonThree setImage:[UIImage imageNamed:@"star3_s@2x.png"] forState:UIControlStateHighlighted];
     [self.buttonFour setImage:[UIImage imageNamed:@"star4@2x.png"] forState:UIControlStateNormal];
         [self.buttonFour setImage:[UIImage imageNamed:@"star4@2x.png"] forState:UIControlStateDisabled];
-            [self.buttonFour setImage:[UIImage imageNamed:@"star4_s@2x.png"] forState:UIControlStateSelected];
+            [self.buttonFour setImage:[UIImage imageNamed:@"star4_s@2x.png"] forState:UIControlStateHighlighted];
 }
 
 - (void)didReceiveMemoryWarning
