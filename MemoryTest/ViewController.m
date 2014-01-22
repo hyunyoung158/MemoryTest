@@ -245,18 +245,18 @@
     [self openDB];
     
     // 버튼 이미지 할당
-    [self.buttonOne setImage:[UIImage imageNamed:@"star1@2x.png"] forState:UIControlStateNormal];
-        [self.buttonOne setImage:[UIImage imageNamed:@"star1@2x.png"] forState:UIControlStateDisabled];
-            [self.buttonOne setImage:[UIImage imageNamed:@"star1_s@2x.png"] forState:UIControlStateHighlighted];
+    [self.buttonOne setImage:[UIImage imageNamed:@"star1@2x.png"] forState:UIControlStateNormal]; // 노말
+    [self.buttonOne setImage:[UIImage imageNamed:@"star1@2x.png"] forState:UIControlStateDisabled]; // disable
+    [self.buttonOne setImage:[UIImage imageNamed:@"star1_s@2x.png"] forState:UIControlStateHighlighted]; // 누를 때
     [self.buttonTwo setImage:[UIImage imageNamed:@"star2@2x.png"] forState:UIControlStateNormal];
-        [self.buttonTwo setImage:[UIImage imageNamed:@"star2@2x.png"] forState:UIControlStateDisabled];
-            [self.buttonTwo setImage:[UIImage imageNamed:@"star2_s@2x.png"] forState:UIControlStateHighlighted];
+    [self.buttonTwo setImage:[UIImage imageNamed:@"star2@2x.png"] forState:UIControlStateDisabled];
+    [self.buttonTwo setImage:[UIImage imageNamed:@"star2_s@2x.png"] forState:UIControlStateHighlighted];
     [self.buttonThree setImage:[UIImage imageNamed:@"star3@2x.png"] forState:UIControlStateNormal];
-        [self.buttonThree setImage:[UIImage imageNamed:@"star3@2x.png"] forState:UIControlStateDisabled];
-            [self.buttonThree setImage:[UIImage imageNamed:@"star3_s@2x.png"] forState:UIControlStateHighlighted];
+    [self.buttonThree setImage:[UIImage imageNamed:@"star3@2x.png"] forState:UIControlStateDisabled];
+    [self.buttonThree setImage:[UIImage imageNamed:@"star3_s@2x.png"] forState:UIControlStateHighlighted];
     [self.buttonFour setImage:[UIImage imageNamed:@"star4@2x.png"] forState:UIControlStateNormal];
-        [self.buttonFour setImage:[UIImage imageNamed:@"star4@2x.png"] forState:UIControlStateDisabled];
-            [self.buttonFour setImage:[UIImage imageNamed:@"star4_s@2x.png"] forState:UIControlStateHighlighted];
+    [self.buttonFour setImage:[UIImage imageNamed:@"star4@2x.png"] forState:UIControlStateDisabled];
+    [self.buttonFour setImage:[UIImage imageNamed:@"star4_s@2x.png"] forState:UIControlStateHighlighted];
 }
 
 - (void)didReceiveMemoryWarning
